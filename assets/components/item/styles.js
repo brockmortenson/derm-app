@@ -1,10 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    mainCon: {
-        flex: 1,
-    },
-
     main: {
         width: '100%',
         height: '100%',
@@ -25,14 +21,24 @@ const styles = StyleSheet.create({
       h2: {
         fontSize: 16,
       },
-    
-      image: {
+
+      sub: {
+        textDecorationLine: 'underline'
+      },
+
+      buttonsContainer: {
         width: '100%',
-        height: '100%',
-        resizeMode: 'cover',
         position: 'absolute',
-        flex: 1,
+        bottom: 100,
+        
       }
+    
+      // image: {
+      //   width: '100%',
+      //   height: '100%',
+      //   resizeMode: 'cover',
+      //   position: 'absolute',
+      // }
 });
 
 export default styles;
