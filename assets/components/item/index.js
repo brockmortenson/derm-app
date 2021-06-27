@@ -5,12 +5,12 @@ import styles from './styles';
 
 const Item = (props) => {
 
-    const { name, tagline, taglineCTA } = props;
+    const { name, tagline, taglineCTA, image } = props.list;
 
     return (
         <View style={styles.main}>
 
-            {/* <ImageBackground source={require('../../../assets/images/rick-morty.jpg')} style={styles.image} /> */}
+            <ImageBackground source={image} style={styles.image} />
 
             <View style={styles.headers}>
                 <Text style={styles.h1}>{name}</Text>
